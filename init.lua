@@ -816,9 +816,13 @@ require('lazy').setup({
     'catppuccin/nvim',
     name = 'catppuccin',
     priority = 1000,
-    init = function()
+    config = function()
+      require('catppuccin').setup {
+        styles = {
+          comments = { 'italic' },
+        },
+      }
       vim.cmd.colorscheme 'catppuccin'
-      vim.cmd.hi 'Comment gui=none'
     end,
   },
 
