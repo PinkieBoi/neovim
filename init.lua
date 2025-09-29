@@ -23,8 +23,6 @@ require('autocommands')
 
 require('lazy').setup({
   -- require 'kickstart.plugins.debug',
-  -- require 'kickstart.plugins.lint',
-  -- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
   { import = 'plugins' },
 }, {
   ui = {
